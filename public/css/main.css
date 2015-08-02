@@ -1,0 +1,21 @@
+img#AKC {
+  height: 50%;
+  width: 50%;
+}
+
+img#AKCmobile {
+  height: 65%;
+  width: 65%;
+}
+
+.puppy {
+  height: 250px;
+  width: auto;
+  max-height: 25%;
+}
+
+.availablepuppy {
+  width: auto;
+  height: 225px;
+  max-height: 500px;
+}

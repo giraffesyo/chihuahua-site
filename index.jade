@@ -1,0 +1,28 @@
+doctype html
+html
+    include ./includes/head.jade
+    body
+        include ./includes/nav.jade
+        .container
+            .row
+                include ./includes/header.jade
+            .row.well.well-lg
+                .col-sm-12.col-md-6
+                    .lead
+                        h1 About Us
+                        p.
+                            Through love and passion we bring you some of the most beautiful, show quality, and AKC champion bloodlines. We specialize in breeding smaller chihuahuas.
+                        p.
+                            We are selling quality pedigree chihuahua puppies. They are home raised with hands on care. We are located in Tulsa, OK, USA.
+                .col-md-6
+                    img.hidden-xs#AKC(src="images/akcLogo.png")
+                .col-md-6.col-xs-12
+                    img.visible-xs-inline#AKCmobile(src="images/akcLogo.png")
+                    p.
+                        Szenasy's Prairie Glade Kennels is a proud member of the Oklahoma Chihuahua Club which is a Member Club of the American Kennel Club.
+                        The American Kennel Club maintains high standards and guidelines for its members which are in the best interest of the chihuahuas.
+                    p
+                        | For more information about the American Kennel Club you may visit their website by clicking&nbsp;
+                        a(href="http://www.akc.org" target="_blank") here.
+
+            include ./includes/foot.jade

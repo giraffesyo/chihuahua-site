@@ -1,0 +1,57 @@
+doctype html
+html
+    include ./includes/head.jade
+    body
+        include ./includes/nav.jade
+        .container
+            .row
+                include ./includes/header.jade
+            .panel.panel-primary
+                .panel-heading
+                    h1 Available Puppies
+                .panel-body
+                    h2 Casey
+                    .row
+                        .col-xs-12
+                            .row
+                                #baxter.carousel.slide
+                                    //indicators
+                                    ol.carousel-indicators
+                                        li.active(data-target="#baxter" data-slide-to="0")
+                                        li(data-target="#baxter" data-slide-to="1")
+                                        li(data-target="#baxter" data-slide-to="2")
+                                    div(role="listbox").carousel-inner
+                                        .item.active
+                                            img.availablepuppy(src="images/breeders/baxter.jpg")
+                                        .item
+                                            img.availablepuppy(src="images/previous/daisyduke.jpg")
+                                        .item
+                                            img.availablepuppy(src="images/Chihuahua-4.jpg")
+
+                            .col-xs-4.col-md-5
+                            .col-xs-8.col-md-7
+                                .row
+                                    button.btn.btn-lg(href="#baxter" type="button" data-slide="prev")
+                                        span.sr-only Left
+                                        span.glyphicon.glyphicon-arrow-left
+                                    button.btn.btn-lg(href="#baxter" type="button" data-slide="next")
+                                        span.sr-only Right
+                                        span.glyphicon.glyphicon-arrow-right
+                    .row
+                        .well
+                            p.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget tristique lorem, id commodo nulla. Sed suscipit risus vitae pulvinar commodo. Suspendisse eu aliquam nibh, vel hendrerit mi. Nulla luctus mi in tellus efficitur euismod. Pellentesque mattis dolor ex, vel eleifend neque dictum sit amet. Fusce sit amet massa eget leo vulputate accumsan nec eget erat. Aenean ultrices tortor et ex ornare, eget consequat nibh scelerisque. Ut in feugiat risus. Donec tincidunt fermentum vehicula. Mauris sit amet erat vel odio maximus porttitor ac sed ligula.
+                    .row
+                    .well
+                        p.
+                            Test content
+                            Test Test
+                            Test
+                            Testtestestet
+            .col-xs-6
+                // Content Here
+            .col-xs-6
+                //content here
+
+
+            include ./includes/foot.jade
